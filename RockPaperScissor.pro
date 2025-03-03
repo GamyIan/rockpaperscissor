@@ -28,5 +28,9 @@ HEADERS += \
 FORMS += \
     rpsgame.ui
 
+RESOURCES += \
+    resources.qrc
+
+
 # Additional settings (adjust as needed)
 # You can add libraries or extra configuration here

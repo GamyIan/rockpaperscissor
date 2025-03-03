@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Sprites/scissors_robot.png</file>
+        <file>Sprites/scissors_human_combined.png</file>
+        <file>Sprites/scissors_combined.png</file>
+        <file>Sprites/rock_robot.png</file>
+        <file>Sprites/rock_human_combined.png</file>
+        <file>Sprites/rock_combined.png</file>
+        <file>Sprites/paper_robot.png</file>
+        <file>Sprites/paper_human_combined.png</file>
+        <file>Sprites/paper_combined.png</file>
+        <file>Sprites/human_scissor.png</file>
+        <file>Sprites/human_rock.png</file>
+        <file>Sprites/human_paper.png</file>
+        <file>Sprites/hatrick_effect.png</file>
+        <file>Sprites/button_quit.png</file>
+        <file>Sprites/background.png</file>
+        <file>Sprites/border.png</file>
+        <file>Sprites/score_robot.png</file>
+        <file>Sprites/score_human.png</file>
+        <file>Sprites/betterbackground.png</file>
+        <file>Sprites/blackBG.png</file>
+    </qresource>
+</RCC>

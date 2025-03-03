@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="rockButton">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>110</x>
       <y>370</y>
       <width>121</width>
       <height>61</height>
@@ -25,6 +25,16 @@
     </property>
     <property name="text">
      <string>Rock</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Sprites/human_rock.png</normaloff>:/Sprites/human_rock.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>54</height>
+     </size>
     </property>
    </widget>
    <widget class="QPushButton" name="paperButton">
@@ -39,6 +49,16 @@
     <property name="text">
      <string>Paper</string>
     </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Sprites/human_paper.png</normaloff>:/Sprites/human_paper.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
    </widget>
    <widget class="QPushButton" name="scissorsButton">
     <property name="geometry">
@@ -52,12 +72,22 @@
     <property name="text">
      <string>Scissors</string>
     </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Sprites/human_scissor.png</normaloff>:/Sprites/human_scissor.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
    </widget>
    <widget class="QLabel" name="computerChoiceLabel">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>260</y>
+      <x>10</x>
+      <y>490</y>
       <width>311</width>
       <height>21</height>
      </rect>
@@ -69,8 +99,8 @@
    <widget class="QLabel" name="resultLabel">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>310</y>
+      <x>10</x>
+      <y>510</y>
       <width>321</width>
       <height>20</height>
      </rect>
@@ -82,54 +112,72 @@
    <widget class="QLCDNumber" name="userScoreLCD">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>50</y>
+      <x>150</x>
+      <y>90</y>
       <width>121</width>
       <height>81</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLCDNumber" name="computerScoreLCD">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>50</y>
+      <x>500</x>
+      <y>90</y>
       <width>121</width>
       <height>81</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="userScoreLabel">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>5</y>
-      <width>121</width>
-      <height>31</height>
+      <x>100</x>
+      <y>-40</y>
+      <width>230</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="text">
-     <string>     USER SCORE:</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Sprites/score_human.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="computerScoreLabel">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>10</y>
-      <width>121</width>
-      <height>31</height>
+      <x>450</x>
+      <y>-40</y>
+      <width>230</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="text">
-     <string>COMPUTER SCORE:</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Sprites/score_robot.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="quitButton">
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>460</y>
+      <y>470</y>
       <width>121</width>
       <height>61</height>
      </rect>
@@ -137,7 +185,78 @@
     <property name="text">
      <string>Quit</string>
     </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/Sprites/button_quit.png</normaloff>:/Sprites/button_quit.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
    </widget>
+   <widget class="QLabel" name="labelUserSprite">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>170</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelRoboSprite">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>170</y>
+      <width>170</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelBackground">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resources.qrc">:/Sprites/blackBG.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>labelBackground</zorder>
+   <zorder>rockButton</zorder>
+   <zorder>paperButton</zorder>
+   <zorder>scissorsButton</zorder>
+   <zorder>computerChoiceLabel</zorder>
+   <zorder>resultLabel</zorder>
+   <zorder>userScoreLCD</zorder>
+   <zorder>computerScoreLCD</zorder>
+   <zorder>userScoreLabel</zorder>
+   <zorder>computerScoreLabel</zorder>
+   <zorder>quitButton</zorder>
+   <zorder>labelUserSprite</zorder>
+   <zorder>labelRoboSprite</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -145,13 +264,15 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>quitButton</sender>
